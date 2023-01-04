@@ -16,6 +16,7 @@ def convert(pywk_prog):
 			lf = True
 			indent_change = 1
 		elif t.type == tokenize.OP and t.string == "}":
+			lf = True
 			indent_change -= 1
 		elif t.type == tokenize.NEWLINE:
 			lf = True
